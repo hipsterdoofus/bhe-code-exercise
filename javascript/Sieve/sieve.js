@@ -11,7 +11,7 @@ class Sieve {
 
 populatePrimes = (n) => {
   // https://stackoverflow.com/questions/29540420/how-can-i-use-the-sieve-of-eratosthenes-to-get-the-nth-prime
-  const max = n <= 6 ? 10 : Math.ceil(n * Math.log(n * Math.log(n)));
+  const max = n <= 6 ? 6 : Math.ceil(n * Math.log(n * Math.log(n)));
   const nums = new Uint8Array(max).fill(true);
 
   for(let i = 0; i <= Math.sqrt(max); i++) {
